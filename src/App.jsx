@@ -1,4 +1,5 @@
 import React from 'react';
+import AddTodoForm from "./AddTodoForm";
 
 const todoList = [
   { id: 1, title: 'Complete assignment' },
@@ -12,6 +13,7 @@ const App = () => {
   return (
     <div className="App">
       <h1>Todo List</h1>
+      <AddTodoForm />
       <ul>
         {todoList.map((todo) => (
           <li key={todo.id}>{todo.title}</li>
